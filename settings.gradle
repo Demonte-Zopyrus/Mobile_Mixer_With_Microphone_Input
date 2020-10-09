@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Mobile_Mixer_With_Microphone_Input"
