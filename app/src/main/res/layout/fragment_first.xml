@@ -56,6 +56,7 @@
         <include layout="@layout/source_view" />
         <include layout="@layout/source_view" />
         <include layout="@layout/source_view" />
+            <include layout="@layout/source_view" />
         </LinearLayout>
     </ScrollView>
 
