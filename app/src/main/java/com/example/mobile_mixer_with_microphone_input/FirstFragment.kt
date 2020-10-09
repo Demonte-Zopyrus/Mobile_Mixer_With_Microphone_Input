@@ -27,7 +27,7 @@ class FirstFragment : Fragment() {
 
         view.findViewById<CompoundButton>(R.id.muteSwitch).setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
-                findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+               // findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
             } else {
                 // The toggle is disabled
             }
