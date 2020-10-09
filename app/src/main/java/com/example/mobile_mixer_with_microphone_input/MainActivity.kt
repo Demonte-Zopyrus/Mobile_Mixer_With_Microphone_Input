@@ -2,6 +2,7 @@ package com.example.mobile_mixer_with_microphone_input
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +10,7 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.navigation.Navigation.findNavController
 
+private const val TAG = "MainActivityLOG"
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,6 +18,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.toolbar))
+
+        Log.d(TAG,"Activity on start")
 
         findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
             Snackbar.make(view, "Would add a new source by pressing this button", Snackbar.LENGTH_LONG)
@@ -37,6 +41,7 @@ class MainActivity : AppCompatActivity() {
             R.id.action_settings -> {
                 val intent = Intent(this, SettingsActivity::class.java)
                 startActivity(intent)
+                Log.d(TAG,"Opening settings activity")
                 true
             }
             else -> super.onOptionsItemSelected(item)

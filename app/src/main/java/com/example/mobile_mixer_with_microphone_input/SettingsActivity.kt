@@ -1,9 +1,10 @@
 package com.example.mobile_mixer_with_microphone_input
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.PreferenceFragmentCompat
-
+private const val TAG = "SettingsActivity"
 class SettingsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +15,8 @@ class SettingsActivity : AppCompatActivity() {
             .replace(R.id.settings, SettingsFragment())
             .commit()
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        Log.d(TAG,"Settings Acvivity on create")
     }
 
     class SettingsFragment : PreferenceFragmentCompat() {
