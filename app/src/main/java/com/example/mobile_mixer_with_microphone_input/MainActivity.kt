@@ -27,6 +27,16 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onDestroy() {
+        Log.d(TAG,"Activity on Destroy")
+        super.onDestroy()
+    }
+
+    override fun onPause() {
+        Log.d(TAG,"Activity on Pause")
+        super.onPause()
+    }
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu_main, menu)
