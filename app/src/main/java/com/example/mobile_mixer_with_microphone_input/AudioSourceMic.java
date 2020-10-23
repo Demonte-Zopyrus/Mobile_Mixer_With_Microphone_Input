@@ -3,4 +3,10 @@ package com.example.mobile_mixer_with_microphone_input;
 // deleted
 
 public class AudioSourceMic {
+    public int id, level;
+    public String status;
+
+    public void initSource(){};
+    public void changeStatus(String status){};
+    public void changeLevel(int id){};
 }
