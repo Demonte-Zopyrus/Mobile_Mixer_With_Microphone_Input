@@ -1,4 +1,4 @@
-package com.example.mobile_mixer;
+package com.example.mobile_mixer_with_microphone_input;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.mobile_mixer", appContext.getPackageName());
+        assertEquals("com.example.mobile_mixer_with_microphone_input", appContext.getPackageName());
     }
 }

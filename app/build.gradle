@@ -5,7 +5,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.example.mobile_mixer"
+        applicationId "com.example.mobile_mixer_with_microphone_input"
         minSdkVersion 26
         targetSdkVersion 30
         versionCode 1

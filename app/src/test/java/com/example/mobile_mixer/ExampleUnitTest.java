@@ -1,4 +1,4 @@
-package com.example.mobile_mixer;
+package com.example.mobile_mixer_with_microphone_input;
 
 import org.junit.Test;
 
