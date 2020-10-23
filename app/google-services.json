@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "248216057568",
+    "firebase_url": "https://mobile-mixer.firebaseio.com",
+    "project_id": "mobile-mixer",
+    "storage_bucket": "mobile-mixer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248216057568:android:49c33e8cb73f0da4980285",
+        "android_client_info": {
+          "package_name": "com.example.mobile_mixer_with_microphone_input"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248216057568-tkoe0mo9pnrdcnv159mjip5sui66ejpo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnTKS9Yp_W_HPIB2CO4LKsbzqNKQ5wuBk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248216057568-tkoe0mo9pnrdcnv159mjip5sui66ejpo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

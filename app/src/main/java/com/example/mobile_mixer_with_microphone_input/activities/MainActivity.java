@@ -1,8 +1,9 @@
-package com.example.mobile_mixer_with_microphone_input;
+package com.example.mobile_mixer_with_microphone_input.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.mobile_mixer_with_microphone_input.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.action_settings:
-                startActivity(new Intent(getApplicationContext(),SettingsActivity.class));
+                startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
                 Log.d(TAG,"Opening settings activity");
                 return true;
 
