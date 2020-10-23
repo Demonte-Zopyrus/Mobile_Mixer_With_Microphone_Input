@@ -1,10 +1,12 @@
-package com.example.mobile_mixer_with_microphone_input;
+package com.example.mobile_mixer_with_microphone_input.activities;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.PreferenceFragmentCompat;
+
+import com.example.mobile_mixer_with_microphone_input.R;
 
 public class SettingsActivity extends AppCompatActivity {
 
