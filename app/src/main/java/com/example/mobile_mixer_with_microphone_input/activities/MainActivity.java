@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
                 Log.d(TAG,"Opening settings activity");
                 return true;
-
             default:
                 return super.onOptionsItemSelected(item);
         }
