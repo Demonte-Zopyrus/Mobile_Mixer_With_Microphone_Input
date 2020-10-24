@@ -1,5 +1,6 @@
 package com.example.mobile_mixer_with_microphone_input.util;
 
+import android.os.Handler;
 import android.util.Log;
 
 import com.example.mobile_mixer_with_microphone_input.model.Session;
@@ -11,24 +12,20 @@ import com.google.firebase.database.ValueEventListener;
 
 
 public class sync_config {
-    DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
+    static DatabaseReference mDatabase= FirebaseDatabase.getInstance().getReference();
     private static final String TAG = "sync_config";
 
-    sync_config(){
-
-    }
-
-    public void upload_session(String userId, Session session){
+    public static void upload_session(String userId, Session session){
         mDatabase.child("UserSessions").child(userId).setValue(session);
     }
 
-    public Session fetch_session(String userId){
+    public static Session fetch_session(String userId){
 
-        DatabaseReference mSessionRef = mDatabase.child("UserSessions").child(userId);
+        final DatabaseReference mSessionRef = mDatabase.child("UserSessions").child(userId);
         final Session[] userSession = new Session[1];
 
 
-        ValueEventListener sessionListener = new ValueEventListener() {
+        final ValueEventListener sessionListener = new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // Get Session object and use the values to update the UI
@@ -44,9 +41,10 @@ public class sync_config {
         };
 
         mSessionRef.addListenerForSingleValueEvent(sessionListener);
+
+        while ( userSession[0] == null);
         mSessionRef.removeEventListener(sessionListener);
         return userSession[0];
-
     }
 
 }

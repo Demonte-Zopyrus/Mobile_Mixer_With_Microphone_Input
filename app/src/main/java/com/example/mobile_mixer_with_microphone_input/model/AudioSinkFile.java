@@ -5,6 +5,19 @@ package com.example.mobile_mixer_with_microphone_input.model;
 
 
 public class AudioSinkFile {
+
+    public AudioSinkFile(){
+
+    }
+
+    public AudioSinkFile(int id, int level, String URI, String status, String outputFormat) {
+        this.id = id;
+        this.level = level;
+        this.URI = URI;
+        this.status = status;
+        this.outputFormat = outputFormat;
+    }
+
     public int id, level;
     public String URI, status, outputFormat;
 
